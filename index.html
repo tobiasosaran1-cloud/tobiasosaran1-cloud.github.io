@@ -1,182 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tobías Osaran | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent: #38bdf8;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: #334155;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            margin-bottom: 40px;
-            background: var(--card-bg);
-            border-radius: 16px;
-            border: 1px solid var(--border);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: var(--accent);
-            margin-bottom: 8px;
-        }
-
-        header p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        .grid {
-            display: grid;
-            gap: 24px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 28px;
-            border-radius: 16px;
-            border: 1px solid var(--border);
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent);
-        }
-
-        .card h2 {
-            font-size: 1.4rem;
-            color: var(--accent);
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .card h3 {
-            font-size: 1.1rem;
-            color: var(--text-main);
-            margin: 16px 0 8px 0;
-        }
-
-        p, li {
-            color: var(--text-muted);
-            font-size: 0.98rem;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 20px;
-            margin-bottom: 8px;
-        }
-
-        ul li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
-
-        .code-inline {
-            background: #090d16;
-            color: var(--accent);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Tobías Osaran — programación, edición de video y contenido digital.">
+  <title>Tobías Osaran — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="logo" href="#home" aria-label="Inicio">TO<span>.</span></a>
+    <nav class="nav" aria-label="Navegación principal">
+      <button data-target="home">Inicio</button>
+      <button data-target="about">Sobre mí</button>
+      <button data-target="projects">Proyectos</button>
+      <button data-target="videos">Videos</button>
+      <button data-target="skills">Skills</button>
+      <button data-target="contact">Contacto</button>
+    </nav>
+    <button class="lang" id="langBtn" aria-label="Cambiar idioma">ES / EN</button>
+  </header>
 
-    <div class="container">
-        <header>
-            <h1>Tobías Osaran</h1>
-            <p>Programming Student at UTN (TUP)</p>
-        </header>
-
-        <div class="grid">
-            <!-- 1. About me -->
-            <div class="card">
-                <h2> About Me</h2>
-                <p>Hi! My name is Tobías Osaran. I am a Programming Student currently pursuing a Technical Degree in Programming (TUP) at UTN. I am deeply passionate about software development, logic, clean code, and problem-solving.</p>
-                <p style="margin-top: 10px;">When I am not coding, I enjoy staying active, doing sports, and starting my mornings with <em>mate</em> while organizing my daily routine.</p>
-            </div>
-
-            <!-- 2. Current projects -->
-            <div class="card">
-                <h2> Current Projects</h2>
-                <p>Now, I'm working on several academic programming projects. In my second semester at UTN, I am focusing on Python applications to master data structures, learn new paradigms, and automate logical processes. I am also continuously updating this live personal portfolio using HTML and GitHub Pages.</p>
-            </div>
-
-            <!-- 3. Past projects -->
-            <div class="card">
-                <h2> Past Projects</h2>
-                <p>During my first semester at UTN, I coded console applications using C# and .NET. I designed algorithms for data validation, average calculations, and sales tracking tools to establish a solid foundation in Object-Oriented Programming (OOP).</p>
-            </div>
-
-            <!-- 4. Future projects -->
-            <div class="card">
-                <h2> Future Projects</h2>
-                <p>In the near future, I will expand my knowledge into full-stack web development. I'm going to build interactive web applications and integrate RESTful APIs with database management systems. I am also planning to develop personal software projects related to IT services and automated tools.</p>
-            </div>
-
-            <!-- 5. Video Tutorial / Technology Comparison -->
-            <div class="card">
-                <h2> Video Tutorial & Technology Comparison</h2>
-                
-                <h3>Tutorial: How to fix a Git commit issue</h3>
-                <p>First, open your terminal in your project directory. Then, stage your modified files using <span class="code-inline">git add .</span>. Finally, run <span class="code-inline">git commit --amend</span> to update your last commit message or content cleanly.</p>
-
-                <h3 style="margin-top: 20px;">Technology Comparison: C# vs Python</h3>
-                <p>C# is faster and more structured for large enterprise software, but Python is simpler, more flexible, and quieter to write for quick scripting and data analysis. Python syntax is easier to learn, while C# provides stronger compile-time type safety.</p>
-            </div>
+  <main class="track" id="track">
+    <section class="panel hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">PORTFOLIO · 2026</p>
+          <h1>Hola, soy<br><span>Tobías Osaran.</span></h1>
+          <p class="hero-text">Estudiante de programación y creador de contenido. Construyo proyectos, edito videos y sigo aprendiendo algo nuevo en cada etapa.</p>
+          <div class="hero-actions">
+            <button class="primary" data-target="projects">Explorar portfolio <span>→</span></button>
+            <button class="ghost" data-target="videos">Ver mis videos</button>
+          </div>
         </div>
+        <div class="hero-art reveal">
+          <div class="orb"></div>
+          <div class="code-card">
+            <div class="dots"><i></i><i></i><i></i></div>
+            <span>01</span>
+            <p>code<span>()</span> + create<span>()</span></p>
+            <small>always learning_</small>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">DESLIZÁ PARA EXPLORAR <span>→</span></div>
+    </section>
 
-        <footer>
-            <p>© 2026 Tobías Osaran • Built with HTML & CSS</p>
-        </footer>
-    </div>
+    <section class="panel about" id="about">
+      <div class="section-number">01</div>
+      <div class="section-content">
+        <p class="eyebrow">SOBRE MÍ</p>
+        <h2>Programar.<br><span>Crear.</span><br>Mejorar.</h2>
+        <div class="about-copy">
+          <p>Mi nombre es Tobías Osaran. Soy estudiante de la Tecnicatura Universitaria en Programación (TUP) en la UTN.</p>
+          <p>Me interesa el desarrollo de software, la lógica, el código limpio y resolver problemas de forma práctica.</p>
+          <p>Fuera de la programación también trabajo con contenido digital, especialmente edición de videos cortos para redes sociales.</p>
+        </div>
+      </div>
+      <div class="about-side">
+        <div class="stat"><strong>UTN</strong><span>TUP · Programación</span></div>
+        <div class="stat"><strong>C#</strong><span>.NET · POO</span></div>
+        <div class="stat"><strong>Python</strong><span>Aplicaciones · Lógica</span></div>
+        <div class="stat"><strong>Video</strong><span>Short-form · CapCut</span></div>
+      </div>
+    </section>
 
+    <section class="panel projects" id="projects">
+      <div class="section-number">02</div>
+      <div class="section-content wide">
+        <p class="eyebrow">PROYECTOS ACTUALES</p>
+        <h2>Lo que estoy<br><span>haciendo.</span></h2>
+        <div class="project-row">
+          <article class="project-card featured">
+            <div class="card-index">01</div>
+            <div class="project-icon">⌘</div>
+            <h3>Programación</h3>
+            <p>Proyectos académicos y personales mientras avanzo en la Tecnicatura Universitaria en Programación.</p>
+            <div class="tags"><span>Python</span><span>C#</span><span>.NET</span><span>HTML/CSS</span></div>
+          </article>
+          <article class="project-card">
+            <div class="card-index">02</div>
+            <div class="project-icon">▶</div>
+            <h3>Edición de video</h3>
+            <p>Edición de Shorts para mi canal de YouTube y contenido para mi página de Instagram.</p>
+            <div class="tags"><span>CapCut</span><span>Shorts</span><span>Instagram</span><span>YouTube</span></div>
+          </article>
+          <article class="project-card">
+            <div class="card-index">03</div>
+            <div class="project-icon">+</div>
+            <h3>Próximamente</h3>
+            <p>Nuevos proyectos de desarrollo web, herramientas personales y automatización.</p>
+            <div class="tags"><span>Web</span><span>APIs</span><span>Bases de datos</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel videos" id="videos">
+      <div class="section-number">03</div>
+      <div class="section-content wide">
+        <div class="video-heading">
+          <div>
+            <p class="eyebrow">EDICIÓN · INSTAGRAM</p>
+            <h2>Mis <span>videos.</span></h2>
+          </div>
+          <p class="video-note">Una selección de Shorts producidos y editados con CapCut.</p>
+        </div>
+        <div class="video-stage">
+          <button class="arrow prev" aria-label="Video anterior">←</button>
+          <div class="video-card">
+            <div class="video-number">01 / 05</div>
+            <div class="video-placeholder">
+              <div class="play-ring">▶</div>
+              <p>Instagram Reel</p>
+            </div>
+            <div class="video-meta">
+              <div>
+                <span>SHORT-FORM VIDEO</span>
+                <h3 id="videoTitle">Reel #01</h3>
+              </div>
+              <a id="videoLink" class="primary small" href="https://www.instagram.com/reel/De4Z67Gz8Wm/" target="_blank" rel="noopener noreferrer">Ver video ↗</a>
+            </div>
+          </div>
+          <button class="arrow next" aria-label="Video siguiente">→</button>
+        </div>
+        <div class="video-dots" id="videoDots"></div>
+      </div>
+    </section>
+
+    <section class="panel skills" id="skills">
+      <div class="section-number">04</div>
+      <div class="section-content">
+        <p class="eyebrow">HABILIDADES</p>
+        <h2>Herramientas<br><span>que uso.</span></h2>
+        <div class="skill-list">
+          <div class="skill"><div><b>Python</b><span>Programación</span></div><div class="bar"><i style="width:76%"></i></div></div>
+          <div class="skill"><div><b>C# / .NET</b><span>POO · Consola</span></div><div class="bar"><i style="width:68%"></i></div></div>
+          <div class="skill"><div><b>HTML / CSS</b><span>Web · GitHub Pages</span></div><div class="bar"><i style="width:74%"></i></div></div>
+          <div class="skill"><div><b>CapCut</b><span>Edición · Shorts</span></div><div class="bar"><i style="width:88%"></i></div></div>
+        </div>
+      </div>
+      <div class="skill-note"><span>01</span><p>Aprender constantemente es parte del proceso.</p></div>
+    </section>
+
+    <section class="panel contact" id="contact">
+      <div class="section-number">05</div>
+      <div class="contact-inner">
+        <p class="eyebrow">CONTACTO</p>
+        <h2>Hablemos de<br><span>lo próximo.</span></h2>
+        <p>Si querés conocer más sobre mis proyectos o mi trabajo de edición, podés encontrarme en mis redes.</p>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+        </div>
+        <small>© 2026 Tobías Osaran · Portfolio</small>
+      </div>
+    </section>
+  </main>
+
+  <div class="progress"><span id="progressBar"></span></div>
+  <div class="cursor" id="cursor"></div>
+  <script src="script.js"></script>
 </body>
 </html>
