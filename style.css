@@ -48,3 +48,174 @@ h2{font-size:clamp(3rem,6vw,6.5rem);line-height:.9;letter-spacing:-.07em}
 @media(max-width:900px){
  body{cursor:auto;overflow:hidden}.cursor{display:none}.topbar{height:70px;padding:0 20px}.nav{display:none}.lang{font-size:.6rem}.panel{padding:105px 24px 45px}.hero-grid,.about,.skills{display:block}.hero-art{height:270px;margin-top:25px}.orb{width:210px;height:210px}.code-card{width:260px;padding:20px}.hero-text{font-size:.85rem}.hero-actions{margin-top:25px}.project-row{width:max-content}.project-card{width:280px}.section-content,.contact-inner{margin-left:0}.section-number{left:24px;top:92px}.section-content.wide{width:calc(100vw - 48px)}.video-heading{display:block}.video-note{margin-top:15px}.video-card{width:calc(100vw - 120px)}.video-placeholder{height:230px}.about-side{margin-top:35px;padding-left:20px}.skill-note{margin-top:35px;padding-left:20px}.contact-links{flex-wrap:wrap}.scroll-hint{left:24px}.contact small{margin-top:45px}}
 @media(max-width:600px){h1{font-size:3.5rem}h2{font-size:3rem}.hero-art{height:220px}.video-stage{gap:8px}.arrow{width:40px;height:40px}.video-card{width:calc(100vw - 95px)}.video-meta{padding:15px}.video-meta h3{font-size:.95rem}.video-placeholder{height:190px}.skill{grid-template-columns:130px 1fr}.primary,.ghost{padding:12px 14px}}
+
+
+/* ===== Accessible large-type redesign (ES / EN) ===== */
+:root{
+  --bg:#08090b;
+  --text:#f7f8f4;
+  --muted:#c2c5cc;
+  --line:rgba(255,255,255,.20);
+  --accent:#d9ff57;
+}
+body{font-size:20px;line-height:1.65}
+.topbar{height:96px;padding:0 4vw}
+.logo{font-size:1.65rem}
+.nav{gap:clamp(14px,2vw,32px)}
+.nav button{font-size:clamp( .95rem,1.15vw,1.2rem);letter-spacing:.04em}
+.lang{font-size:1rem;padding:12px 18px;border-width:2px}
+.panel{padding:150px 5vw 70px}
+.hero-grid{grid-template-columns:1.15fr .85fr;gap:3vw}
+.eyebrow{font-size:1rem;letter-spacing:.12em;margin-bottom:28px}
+h1{font-size:clamp(5.8rem,10vw,10.5rem);line-height:.92;letter-spacing:-.065em}
+h2{font-size:clamp(4.4rem,7.2vw,8rem);line-height:.98;letter-spacing:-.06em}
+.hero-text{max-width:760px;margin-top:42px;font-size:clamp(1.25rem,1.7vw,1.75rem);line-height:1.65;color:#d0d2d8}
+.hero-actions{gap:18px;margin-top:42px}
+.primary,.ghost{font-size:1.05rem;padding:20px 26px;letter-spacing:.035em;border-radius:8px}
+.hero-art{height:min(58vh,620px)}
+.orb{width:min(29vw,440px);height:min(29vw,440px)}
+.code-card{width:min(440px,36vw);padding:34px}
+.code-card p{font-size:1.55rem}
+.code-card small{font-size:1rem}
+.scroll-hint{bottom:35px;font-size:.95rem;letter-spacing:.08em}
+.section-number{top:125px;font-size:.95rem}
+.section-content{margin-left:5vw;max-width:1000px}
+.section-content.wide{max-width:1300px;width:88vw}
+.about{grid-template-columns:1.15fr .85fr;gap:4vw}
+.about-copy{margin-top:42px;max-width:900px}
+.about-copy p{font-size:clamp(1.2rem,1.55vw,1.55rem);line-height:1.8;margin-bottom:22px;color:#d0d2d8}
+.about-side{padding-left:45px;gap:34px}
+.stat strong{font-size:2.2rem}
+.stat span{font-size:1rem;letter-spacing:.06em;color:#b9bbc2}
+.project-row{gap:22px;margin-top:55px}
+.project-card{width:32%;min-height:390px;padding:34px}
+.card-index{font-size:.9rem}
+.project-icon{font-size:2.4rem;margin-bottom:48px}
+.project-card h3{font-size:clamp(1.7rem,2.2vw,2.25rem);line-height:1.2;margin-bottom:18px}
+.project-card p{font-size:1.15rem;line-height:1.75;color:#d0d2d8}
+.tags{gap:10px;margin-top:28px}
+.tags span{font-size:.85rem;padding:9px 12px;letter-spacing:.04em}
+.video-heading{gap:45px}
+.video-note{max-width:440px;font-size:1.2rem;line-height:1.75}
+.video-stage{gap:28px;margin-top:45px}
+.arrow{width:68px;height:68px;font-size:1.8rem;border-width:2px}
+.video-card{width:min(900px,66vw)}
+.video-placeholder{height:clamp(300px,37vh,430px)}
+.play-ring{width:88px;height:88px;font-size:1.6rem;border-width:2px}
+.video-placeholder p{font-size:.95rem;letter-spacing:.08em}
+.video-meta{padding:28px 32px}
+.video-meta span{font-size:.85rem;letter-spacing:.08em}
+.video-meta h3{font-size:1.7rem;margin-top:8px}
+.video-meta .small{font-size:1rem;padding:16px 20px}
+.video-dots{font-size:1rem;letter-spacing:10px;margin-top:24px}
+.skills{grid-template-columns:1fr .5fr;gap:4vw}
+.skill-list{margin-top:55px;gap:30px}
+.skill{grid-template-columns:minmax(190px,260px) 1fr;gap:26px}
+.skill b{font-size:1.25rem}
+.skill span{font-size:.9rem;letter-spacing:.04em;margin-top:7px;color:#b9bbc2}
+.bar{height:5px}
+.skill-note{padding-left:45px}
+.skill-note span{font-size:.95rem}
+.skill-note p{font-size:clamp(2rem,3vw,3rem);line-height:1.25;max-width:420px}
+.contact-inner{margin-left:5vw}
+.contact h2{margin-bottom:38px}
+.contact-inner>p{max-width:780px;font-size:1.35rem;line-height:1.8;color:#d0d2d8}
+.contact-links{gap:16px;margin-top:42px}
+.contact-links a{padding:18px 24px;font-size:1rem;letter-spacing:.04em;border-width:2px}
+.contact small{font-size:.9rem;margin-top:75px;color:#a8abb2}
+.progress{height:4px}
+.cursor{width:16px;height:16px;border-width:2px}
+
+/* Clear focus states for keyboard navigation */
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+
+/* Medium screens: keep content spacious without clipping */
+@media(max-width:1100px){
+  .topbar{height:82px;padding:0 24px}
+  .nav{gap:13px}
+  .nav button{font-size:.9rem}
+  .panel{padding:120px 28px 55px}
+  .hero-grid{grid-template-columns:1fr .7fr;gap:2vw}
+  h1{font-size:clamp(4.7rem,9vw,7.8rem)}
+  h2{font-size:clamp(3.8rem,7vw,6rem)}
+  .hero-art{height:430px}
+  .code-card{width:300px}
+  .section-content{margin-left:3vw}
+  .section-content.wide{width:calc(100vw - 56px)}
+  .project-card{padding:24px;min-height:360px}
+  .project-card h3{font-size:1.55rem}
+  .project-card p{font-size:1.05rem}
+  .video-card{width:min(760px,65vw)}
+  .skill{grid-template-columns:170px 1fr}
+}
+@media(max-width:760px){
+  body{font-size:18px}
+  .topbar{height:76px;padding:0 18px}
+  .logo{font-size:1.4rem}
+  .nav{display:none}
+  .lang{font-size:.9rem;padding:10px 14px}
+  .panel{padding:108px 22px 54px}
+  .hero{align-items:flex-start}
+  .hero-grid,.about,.skills{display:block}
+  .hero-grid{width:100%}
+  .eyebrow{font-size:.82rem;margin-bottom:22px}
+  h1{font-size:clamp(3.7rem,15vw,6.2rem);line-height:.98}
+  h2{font-size:clamp(3.25rem,12vw,5.3rem);line-height:1}
+  .hero-text{font-size:1.2rem;line-height:1.7;margin-top:28px}
+  .hero-actions{flex-wrap:wrap;gap:12px;margin-top:28px}
+  .primary,.ghost{font-size:.95rem;padding:16px 18px}
+  .hero-art{height:230px;margin-top:22px}
+  .orb{width:190px;height:190px}
+  .code-card{width:245px;padding:18px}
+  .code-card p{font-size:1.1rem;margin:9px 0 14px}
+  .code-card small{font-size:.8rem}
+  .scroll-hint{left:22px;bottom:22px;font-size:.75rem}
+  .section-number{left:22px;top:88px;font-size:.8rem}
+  .section-content,.contact-inner{margin-left:0}
+  .section-content.wide{width:calc(100vw - 44px)}
+  .about-copy{margin-top:28px}
+  .about-copy p{font-size:1.12rem;line-height:1.75;margin-bottom:17px}
+  .about-side{margin-top:28px;padding-left:18px;gap:20px}
+  .stat strong{font-size:1.7rem}
+  .stat span{font-size:.78rem}
+  .projects{align-items:flex-start}
+  .project-row{gap:14px;margin-top:28px}
+  .project-card{width:78vw;min-height:310px;padding:22px}
+  .project-icon{font-size:1.8rem;margin-bottom:28px}
+  .project-card h3{font-size:1.55rem}
+  .project-card p{font-size:1.05rem;line-height:1.65}
+  .tags span{font-size:.72rem;padding:7px 9px}
+  .video-heading{display:block}
+  .video-note{font-size:1.05rem;margin-top:14px}
+  .video-stage{gap:8px;margin-top:28px}
+  .arrow{width:42px;height:42px;font-size:1.25rem}
+  .video-card{width:calc(100vw - 104px)}
+  .video-placeholder{height:230px}
+  .play-ring{width:62px;height:62px}
+  .video-placeholder p{font-size:.75rem}
+  .video-meta{padding:14px;gap:10px;align-items:center}
+  .video-meta span{font-size:.65rem}
+  .video-meta h3{font-size:1.1rem}
+  .video-meta .small{font-size:.78rem;padding:11px 12px}
+  .video-dots{font-size:.8rem;letter-spacing:5px}
+  .skill-list{margin-top:30px;gap:23px}
+  .skill{grid-template-columns:125px 1fr;gap:13px}
+  .skill b{font-size:1rem}
+  .skill span{font-size:.72rem;line-height:1.35}
+  .bar{height:4px}
+  .skill-note{margin-top:30px;padding-left:18px}
+  .skill-note p{font-size:1.65rem}
+  .contact h2{margin-bottom:24px}
+  .contact-inner>p{font-size:1.1rem;line-height:1.7}
+  .contact-links{gap:10px;margin-top:28px}
+  .contact-links a{font-size:.85rem;padding:14px 16px}
+  .contact small{font-size:.75rem;margin-top:40px}
+}
+@media(max-width:390px){
+  h1{font-size:3.35rem}
+  h2{font-size:2.9rem}
+  .hero-actions .primary,.hero-actions .ghost{font-size:.82rem;padding:13px 14px}
+  .video-card{width:calc(100vw - 94px)}
+  .video-meta{display:block}
+  .video-meta .small{margin-top:12px}
+}
